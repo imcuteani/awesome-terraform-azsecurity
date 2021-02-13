@@ -19,22 +19,22 @@ variable "tenant_id" {
 }
 
 variable "resource_group" {
-    type = string
-    description = "The Azure resource group name"
+  type        = string
+  description = "The Azure resource group name"
 }
 
 variable "resource_group_location" {
-    type = string
-    description = "The Azure resource group location"
-  
+  type        = string
+  description = "The Azure resource group location"
+
 }
 variable "azure_log_analytics_workspace_name" {
-    type = string
-    description = "The Azure Log Analytics workspace name"
+  type        = string
+  description = "The Azure Log Analytics workspace name"
 }
 
 variable "loganalytics_ws_sku" {
-    type = string
-    description = "The Log Analytics workspace SKU"
-  
+  type        = string
+  description = "The Log Analytics workspace SKU"
+
 }
