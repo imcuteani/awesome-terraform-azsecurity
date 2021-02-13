@@ -28,12 +28,12 @@ variable "resource_group_location" {
   description = "The Azure resource group location"
 
 }
-variable "azure_log_analytics_workspace_name" {
+variable "azure_log_analytics_ws_name" {
   type        = string
   description = "The Azure Log Analytics workspace name"
 }
 
-variable "loganalytics_ws_sku" {
+variable "log_analytics_ws_sku" {
   type        = string
   description = "The Log Analytics workspace SKU"
 

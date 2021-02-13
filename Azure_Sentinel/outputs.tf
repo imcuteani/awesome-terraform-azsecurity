@@ -3,5 +3,5 @@ output "azure_log_analytics_workspace" {
 }
 
 output "azure_sentinel_rules" {
-  value = azurem_sentinel_alert_rule_scheduled.example.id
+  value = azurerm_sentinel_alert_rule_scheduled.example.id
 }

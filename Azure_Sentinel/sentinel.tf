@@ -1,8 +1,8 @@
 # Create Azure Resource group
 
 resource "azurerm_resource_group" "example" {
-  name     = "${var.azure_resource_group_name}"
-  location = "${var.azure_resource_group_location}"
+  name     = "${var.resource_group}"
+  location = "${var.resource_group_location}"
 }
 
 # Create Log Analytics workspace 
@@ -15,7 +15,7 @@ resource "azurerm_log_analytics_workspace" "example" {
 
 }
 # Create Azure Sentinel Alert Rule
-resource "azurem_sentinel_alert_rule_scheduled" "example" {
+resource "azurerm_sentinel_alert_rule_scheduled" "example" {
   depends_on                 = [azurerm_log_analytics_workspace.example]
   name                       = "${var.azure_sentinel_rule_name}"
   log_analytics_workspace_id = azurerm_log_analytics_workspace.example.id
